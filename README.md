@@ -3,7 +3,7 @@
 Aluna: Alexsandra T. |
 PROF. CYBELLE MORAES - Curso: Developer Web - Elas Na Tech - IBM 
 
-## EXERCÍCIO AULA 08
+## EXERCÍCIO AULA 08-09
 
 Vamos construir uma loja virtual usando HTML.
 a.Faça a página inicial com um menu na horizontal usando o seguinte modelo:
