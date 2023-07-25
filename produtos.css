@@ -1,0 +1,56 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color:brown;
+  font-size:x-large ;
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.img-hover:hover {
+  border-color: #111;
+  background:#111;
+  display: inline-flex;
+  color:#fff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  border-color: #111;
+  display: block;
+  text-align: center;
+  color: #007BFF;
+  text-decoration: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  

@@ -1,0 +1,102 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do cabeçalho (header) */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilo da barra de navegação (nav) */
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo principal (main) */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+main h2 {
+  color: #333;
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+}
+
+
+  
+ /* Estilo do carousel slide */
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
+.carousel-slide {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+}
+
+/*Botões de controle do carrossel*/
+
+
+  
+  @keyframes carousel {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
+  /* Estilo do rodapé (footer) */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
