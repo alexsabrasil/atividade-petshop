@@ -8,13 +8,8 @@ PROF. CYBELLE MORAES - Curso: Developer Web - Elas Na Tech - IBM
 Vamos construir uma loja virtual usando HTML.
 a.Faça a página inicial com um menu na horizontal usando o seguinte modelo:
 Vamos usar os seguintes códigos no VSCODE – Arquivo HTML
-## Antes 
-![modelo-atividade1](https://github.com/alexsabrasil/petshop-atividade/assets/113733583/022d06ed-e73d-46e1-82fc-fb97bc0f4ee7)
-![modelo-atividade2](https://github.com/alexsabrasil/petshop-atividade/assets/113733583/132e3177-d822-4795-8de6-ad20e72d693f)
-## Depois
-![1-loja pet](https://github.com/alexsabrasil/petshop-atividade/assets/113733583/af134d70-bdd2-4b7e-8df1-a14d47079a13)
-![2-loja pet](https://github.com/alexsabrasil/petshop-atividade/assets/113733583/8e16012c-c2fb-4e8d-84f2-6beb146df141)
-![3-loja pet](https://github.com/alexsabrasil/petshop-atividade/assets/113733583/68282a8e-8d6c-412f-8627-b76639daf0ff)
+## Em fase de alterações 
+![printgithub-pagina-petshop-atividade](https://github.com/alexsabrasil/atividade-petshop/assets/113733583/c5378a62-a008-4c29-9396-6faeef9bab5a)
 ##
 1. Para a aba do navegador
 2. Para usar a página CSS correspondente dentro do HTML
