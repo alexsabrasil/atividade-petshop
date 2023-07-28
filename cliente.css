@@ -45,13 +45,30 @@ form {
 }
 
 a {
-    border-color: #111;
+    
     display: block;
     text-align: center;
-    color: #007BFF;
+    color: #333;
     text-decoration: none;
-    margin-top: 5px;
-    border-radius: 5px;
+    transition: 0.3s;
     cursor: pointer;
   }
+
+  a:hover {
+    opacity: 0.7;
+}
+
   
+  /* Responsivo */
+
+  @media (max-width: 600px) {
+    nav li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  }

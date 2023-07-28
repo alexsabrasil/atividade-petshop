@@ -1,3 +1,10 @@
+const hamburguer = document.querySelector(".hamburguer");
+const nav = document.querySelector(".nav");
+
+hamburguer.addEventListener("click" , () => 
+nav.classList.toggle("active"));
+
+
 const carouselSlide = document.querySelector(".carousel-slide");
 const carouselImages = document.querySelectorAll(".carousel-slide img");
 
@@ -31,3 +38,6 @@ prevButton.addEventListener("click", prevSlide);
 
 document.body.appendChild(prevButton);
 document.body.appendChild(nextButton);
+
+
+

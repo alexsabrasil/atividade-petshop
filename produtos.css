@@ -30,6 +30,23 @@ header h1 {
   height: auto;
 }
 
+/*responsivo carrossel*/
+
+@keyframes carousel {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .img-hover:hover {
   border-color: #111;
   background:#111;
