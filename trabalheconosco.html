@@ -38,6 +38,37 @@
     </form>
   </main>
 
+    <script>
+  function validarFormulario() {
+    var nomeInput = document.getElementById("nome");
+    var telefoneInput = document.getElementById("telefone");
+    var enderecoInput = document.getElementById("endereco");
+    var experienciaInput = document.getElementById("experiencia_profissional");
+    var formacaoInput = document.getElementById("formacao");
+    var cursosInput = document.getElementById("cursos_realizados");
+
+    if (nomeInput.value.trim() === "") {
+      alert("Por favor, preencha o campo Nome.");
+      nomeInput.focus();
+      return false;
+    }
+
+    if (telefoneInput.value.trim() === "") {
+      alert("Por favor, preencha o campo Telefone.");
+      telefoneInput.focus();
+      return false;
+    }
+
+    // Adicione outras validações conforme necessário...
+
+    return true;
+  }
+</script>
+
+<form action="/processar_formulario_envie_seu_curriculo" method="POST" onsubmit="return validarFormulario()">
+  <!-- ... restante do formulário ... -->
+</form>
+
   <header>
     <nav>
       <ul>
@@ -47,7 +78,7 @@
   </header>
   
 <footer>
-  <p>&copy; <strong>Developer Alexsandra Silva</strong> | Exercício 8,9,10 - Elas Na Tech 2023.</p>
+  <p>&copy; <strong>Developer Alexsandra Silva</strong> | Exercício 8,9,10,11 - Elas Na Tech 2023.</p>
 </footer>
 
 </body>
