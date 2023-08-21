@@ -80,7 +80,8 @@ body {
   
   /* Formulário responsivo */
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
+    
     nav li {
       display: block;
       margin-right: 0;

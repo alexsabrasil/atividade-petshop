@@ -8,7 +8,7 @@
 
 /*cabeçalho*/
 
-h1, p {
+h1 p {
   text-align: center;
 }
 
@@ -104,20 +104,14 @@ h1 {
 
 /*responsivo*/
 
-@keyframes container {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+@media (max-width:600px) {
+  .card {
+
   }
 }
+
+
+ 
 
 /* Estilo do rodapé (footer) */
 
