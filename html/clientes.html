@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Outra Página</title>
+  <link rel="stylesheet" type="text/css" href="../css/cliente.css" href="../css/styles.css"/>
+</head>
+<body>
+  <h1>Cliente Amigo, seja bem-vindo!</h1>
+  <h2>Preencha o formulário abaixo:</h2>
+
+  <action="enviar.php" method="POST" onsubmit="return validarFormulario()">
+    <fieldset>
+      <legend><h3>Dados Pessoais</h3></legend>
+
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <label for="nome">Nome: </label>
+          </td>
+          <td align="left">
+            <input type="text" id="nome" name="nome" required>
+          </td>
+          <td>
+            <label for="sobrenome">Sobrenome: </label>
+          </td>
+          <td align="left">
+            <input type="text" id="sobrenome" name="sobrenome" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Nascimento: </label>
+          </td>
+          <td align="left">
+            <input type="text" name="dia" size="2" maxlength="2" placeholder="dd" required>
+            <input type="text" name="mes" size="2" maxlength="2" placeholder="mm" required>
+            <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa" required>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <label for="rg">RG: </label>
+          </td>
+          <td align="left">
+            <input type="text" name="rg" size="13" maxlength="13" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>CPF:</label>
+          </td>
+          <td align="left">
+            <input type="text" name="cpf" size="9" maxlength="9" required> - <input
+              type="text" name="cpf2" size="2" maxlength="2" required>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <!-- ENDEREÇO -->
+    <fieldset>
+      <legend><h3>Dados de Endereço</h3></legend>
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <label for="rua">Rua:</label>
+          </td>
+          <td align="left">
+            <input type="text" name="rua" required>
+          </td>
+          <td>
+            <label for="numero">Número:</label>
+          </td>
+          <td align="left">
+            <input type="text" name="numero" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="bairro">Bairro: </label>
+          </td>
+          <td align="left">
+            <input type="text" name="bairro" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="estado">Estado:</label>
+          </td>
+          <td align="left">
+            <select name="estado" required>
+              <option value="ac">Acre</option>
+              <option value="al">Alagoas</option>
+              <option value="am">Amazonas</option>
+              <option value="ap">Amapá</option>
+              <option value="ba">Bahia</option>
+              <option value="ce">Ceará</option>
+              <option value="df">Distrito Federal</option>
+              <option value="es">Espírito Santo</option>
+              <option value="go">Goiás</option>
+              <option value="ma">Maranhão</option>
+              <option value="mt">Mato Grosso</option>
+              <option value="ms">Mato Grosso do Sul</option>
+              <option value="mg">Minas Gerais</option>
+              <option value="pa">Pará</option>
+              <option value="pb">Paraíba</option>
+              <option value="pr">Paraná</option>
+              <option value="pe">Pernambuco</option>
+              <option value="pi">Piauí</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="rn">Rio Grande do Norte</option>
+              <option value="ro">Rondônia</option>
+              <option value="rs">Rio Grande do Sul</option>
+              <option value="rr">Roraima</option>
+              <option value="sc">Santa Catarina</option>
+              <option value="se">Sergipe</option>
+              <option value="sp">São Paulo</option>
+              <option value="to">Tocantins</option>
+          <td>
+            <label for="estado">País:</label>
+          </td>
+          <td align="left">
+          <select name="pais" required> 
+              <option value="de">Alemanha</option>
+              <option value="ar">Argentina</option>
+              <option value="au">Austrália</option>
+              <option value="za">África do Sul</option>
+              <option value="ao">Angola</option>
+              <option value="br">Brasil</option>
+              <option value="ca">Canadá</option>
+              <option value="cn">China</option>
+              <option value="us">Estados Unidos</option>
+              <option value="es">Espanha</option>
+              <option value="fr">França</option>
+              <option value="in">Índia</option>
+              <option value="it">Itália</option>
+              <option value="jp">Japão</option>
+              <option value="mx">México</option>
+              <option value="pt">Portugal</option>
+              <option value="uk">Reino Unido</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cidade">Cidade: </label>
+          </td>
+
+          <td align="left">
+            <input type="text" name="cidade" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="cep">CEP: </label>
+          </td>
+          <td align="left">
+            <input type="text" name="cep" size="5" maxlength="5" required> - <input
+              type="text" name="cep2" size="3" maxlength="3" required>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <!-- DADOS DE LOGIN -->
+    <fieldset>
+      <legend><h3>Dados de login</h3></legend>
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <label for="email">E-mail: </label>
+          </td>
+          <td align="left">
+            <input type="text" name="email" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="login">Login de usuário: </label>
+          </td>
+          <td align="left">
+            <input type="text" name="login" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass">Senha: </label>
+          </td>
+          <td align="left">
+            <input type="password" name="pass" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="passconfirm">Confirme a senha: </label>
+          </td>
+          <td align="left">
+            <input type="password" name="passconfirm" required>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+  <script>
+    function validarFormulario() {
+      // Realizar validações em tempo real
+        var emailInput = document.getElementById("email");
+        var logindousuarioInput = document.getElementById("login-do-usuário");
+        var senhaInput = document.getElementById("senha");
+        var confirmeasenhaInput = document.getElementById("confirme-a-senha");
+
+          if (!emailInput.checkValidity()) {
+             alert("Por favor, preencha o campo de E-mail corretamente.");
+             emailInput.focus();
+              return false;
+          }
+
+          if (!logindousuarioInput.checkValidity()) {
+            alert("Por favor, digite um login válido.");
+            logindousuarioInput.focus();
+            return false;
+          }
+
+         if (!senhaInput.checkValidity()) {
+            alert("Por favor, preencha o campo Senha corretamente.");
+            senhaInput.focus();
+            return false;
+         }
+
+        if (!confirmeasenhaInput.checkValidity()) {
+            alert("Por favor, preencha o campo Confirme-a-Mensagem.");
+            confirmeasenhaInput.focus();
+            return false;
+        }
+
+        // Exibir mensagem de sucesso após o envio do formulário
+
+      var mensagemSucesso = document.querySelector(".mensagem-sucesso");
+      mensagemSucesso.style.display = "block";
+
+    // Limpar os campos do formulário após o envio
+      emailInput.value = "";
+      logindousuarioInput.value = "";
+      senhaInput.value = "";
+      confirmeasenhaInput.value = "";
+
+      return false; // Retorna false para evitar o redirecionamento automático após o envio
+  }
+</script>
+
+<br>
+<form> 
+  <input type="submit" class="input-hover" value="Enviar">
+  <input type="reset" class="input-hover" value="Limpar">
+</form>
+  <a href="index.html">Voltar à Página Principal</a>
+</body>
+</html>

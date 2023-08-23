@@ -1,0 +1,87 @@
+*
+body {
+    font-family: 'Poppins, Helvetica, sans-serif';
+    background-image: url(..//imagens/logoembacada.png);
+    background-size: cover;
+     
+    
+   
+}
+
+h1 {
+    color:#111;
+    font-size:x-large ;
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+}
+
+h2 {
+    color:#111;
+    font-size:x-large ;
+    font-size: 25px;
+    font-style: normal;
+}
+
+h3 {
+    color: #111;
+    font-size:x-large ;
+    font-size: 25px;
+    font-style: normal;
+}
+
+form {
+    display: flex;
+    
+  }
+
+.input-hover:hover {
+    border-color: #f7d8d8;
+    background:#111;
+    display: inline-flex;
+    color:#f7d8d8;;
+    padding: 5px 15px;
+    text-align: center; 
+}
+
+.input-hover {
+  border-color: #777474;
+  background:#5c5a5a;
+  display: inline-flex;
+  color:#fff;
+  padding: 5px 10px;
+  margin: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+    
+    display: block;
+    text-align: center;
+    color: #1946b6;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  a:hover {
+    opacity: 0.7;
+}
+
+  
+  /* Responsivo */
+
+  @media (max-width: 600px) {
+    nav li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  }

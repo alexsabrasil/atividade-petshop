@@ -1,0 +1,93 @@
+* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #415403;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 38px;
+    background-color: rgb(214, 206, 192);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c9605;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #d49409;
+  }
+
+  /* Estilos para amensagem de envio */
+
+  .mensagem-envio {
+    display: none; /* Oculta a mensagem por padrão */
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+ 
+
+  /* Estilo do rodapé (footer) */
+
+footer {
+    color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    color: #e3e8ef;
+    text-decoration: none;
+    margin-top: 0;
+    transition: 0.9s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
